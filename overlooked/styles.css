@@ -41,6 +41,10 @@ html {
   line-height: 1.6;
 }
 
+img {
+  display: block;
+}
+
 .candidate {
   padding: 1em;
 }
@@ -52,6 +56,38 @@ html {
   line-height: 1;
 }
 
+.candidate .social {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.candidate .social a:hover,
+.candidate .social a:focus {
+  opacity: 0.5;
+}
+
+.candidate .btn {
+  align-self: end;
+  justify-self: end;
+}
+
+.candidate > img {
+  border-radius: var(--border-radius);
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5em 3em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--fg, #fff);
+  background-color: var(--bg, var(--clr-accent-400));
+  border-radius: var(--border-radius);
+}
+
 .tag {
   font-size: var(--fs-300);
   font-weight: var(--fw-700);
@@ -61,6 +97,21 @@ html {
   border-radius: 100vh;
   background-color: var(--bg, lightgray);
   color: var(--fg, darkgray);
+}
+
+.ux {
+  --bg: var(--clr-ux-300);
+  --fg: var(--clr-ux-400);
+}
+
+.ui {
+  --bg: var(--clr-ui-300);
+  --fg: var(--clr-ui-400);
+}
+
+.dev {
+  --bg: var(--clr-dev-300);
+  --fg: var(--clr-dev-400);
 }
 
 /* /////////////////
