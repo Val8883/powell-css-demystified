@@ -32,6 +32,12 @@ p {
 }
 
 /* Utility classes */
+
+.bg-dark {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
 .flow-content > * + * {
   margin-top: var(--flow-space, var(--spacer));
 }
@@ -56,9 +62,9 @@ p {
     flex-direction: row;
   }
 
-  /* .split > * {
+  .split > * {
     flex-basis: 100%;
-  } */
+  }
 
   .split > * + * {
     margin: 0 0 0 var(--spacer);
@@ -113,4 +119,9 @@ section {
 .card {
   padding: var(--spacer);
   box-shadow: 0 0 1rem #00000020;
+}
+
+.section-one {
+  background-image: url(./img/hero-bg.jpg);
+  background-size: conver;
 }
